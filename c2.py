@@ -1,5 +1,6 @@
 from c1 import hex_to_raw 
 
+# Takes a byte string and produces the corresponding hex encoded string 
 def raw_to_hex(byte_string):
     hex_string = ""
     for i in byte_string:
@@ -10,6 +11,7 @@ def raw_to_hex(byte_string):
         hex_string += hs
     return hex_string
 
+# Taking two fixed length byte strings, produce their XOR 
 def fixed_xor(bytes1, bytes2):
     output = []
     for i in range(len(bytes1)):
